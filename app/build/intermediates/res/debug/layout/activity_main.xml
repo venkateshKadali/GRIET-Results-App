@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+   <HorizontalScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:stretchColumns="*"
+    android:baselineAligned="false"
+    android:transitionGroup="false" android:background="#dfe3ee">
+
+
+
+
+
+
+    <TableRow android:id="@+id/tableRow12"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal">
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textSize="18sp"
+        android:text="@string/name"
+        android:gravity="center"
+        android:layout_span="6"
+        ></TextView>
+    </TableRow>
+    <TableRow android:id="@+id/tableRow11"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/editText1"
+        android:layout_span="3"
+        android:hint="@string/enter"
+        android:textColorHighlight="#ff030600"
+        android:textColorHint="#ffa7acb7" />
+    </TableRow>
+
+    <TableRow android:id="@+id/tableRow10"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal">
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_gravity="center"
+        android:id="@+id/button"
+        android:background="#4285f4"
+        android:textColor="#ffffffff"
+        android:textStyle="normal"
+        android:onClick="submit"/>
+</TableRow>
+
+    <TableRow android:id="@+id/tableRow15"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#f7f7f7"
+        >
+
+        <TextView android:text= "Name:"
+            android:id="@+id/textview19"
+            android:padding="5dip"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:layout_span="1"
+            ></TextView>
+
+        <TextView android:text= ""
+            android:id="@+id/textview18"
+            android:padding="5dip"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:layout_span="6"
+            ></TextView>
+    </TableRow>
+
+
+    <TableRow android:id="@+id/tableRow16"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#f7f7f7"
+        >
+
+        <TextView android:text= "Roll No:"
+            android:id="@+id/textview16"
+            android:padding="5dip"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:layout_span="1"
+            ></TextView>
+
+        <TextView android:text= ""
+            android:id="@+id/textview15"
+            android:padding="5dip"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:layout_span="3"
+            ></TextView>
+    </TableRow>
+
+
+    <TableRow android:id="@+id/tableRow17"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#f7f7f7"
+        >
+
+        <TextView android:text= "Branch:"
+            android:id="@+id/textview14"
+            android:padding="5dip"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:layout_span="1"
+            ></TextView>
+
+        <TextView android:text= ""
+            android:id="@+id/textview13"
+            android:padding="5dip"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:layout_span="3"
+            ></TextView>
+    </TableRow>
+
+
+
+    <TableRow android:id="@+id/tableRow9"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#8baaff"
+        android:layout_marginTop="0dp"
+        >
+        <TextView android:text= "Sub Code"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview9"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView  android:text= "Subject Name"
+            android:width="131dip"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview8"
+            android:padding="5dip"
+            android:textStyle="bold"/>
+        <TextView  android:text= "Int"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview7"
+            android:padding="5dip"
+            android:textStyle="bold"></TextView>
+        <TextView  android:text= "Ext"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview6"
+            android:padding="5dip"
+            android:textStyle="bold"></TextView>
+        <TextView  android:text= "Tot"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview5"
+            android:padding="5dip"
+            android:textStyle="bold"></TextView>
+        <TextView  android:text= "Cre"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview4"
+            android:padding="5dip"
+            android:textStyle="bold"></TextView>
+        <TextView  android:text= "Res"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview3"
+            android:padding="5dip"
+            android:textStyle="bold"></TextView>
+    </TableRow>
+
+
+    <TableRow android:id="@+id/tableRow7"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="#f7f7f7"
+>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview91"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:width="131dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview92"
+            android:textStyle="bold"
+            android:padding="5dip"/>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview93"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview94"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview95"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview96"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview97"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+    </TableRow>
+
+    <TableRow android:id="@+id/tableRow6"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#f7f7f7"
+        >
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview81"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview82"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview83"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview84"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview85"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview86"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview87"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+    </TableRow>
+
+    <TableRow android:id="@+id/tableRow5"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#f7f7f7"
+        >
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview71"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview72"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview73"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview74"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview75"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview76"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview77"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+    </TableRow>
+
+    <TableRow android:id="@+id/tableRow4"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#f7f7f7"
+        >
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview61"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview62"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview63"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview64"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview65"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview66"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview67"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+    </TableRow>
+
+    <TableRow android:id="@+id/tableRow3"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#f7f7f7"
+        >
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview51"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview52"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview53"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview54"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview55"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview56"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview57"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+    </TableRow>
+
+    <TableRow android:id="@+id/tableRow2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#f7f7f7"
+        >
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview41"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview42"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview43"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview44"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview45"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview46"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview47"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+    </TableRow>
+
+    <TableRow android:id="@+id/tableRow0"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#f7f7f7"
+        >
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview21"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview22"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview23"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview24"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview25"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview26"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview27"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+    </TableRow>
+
+    <TableRow android:id="@+id/tableRow1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#f7f7f7"
+        >
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview31"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview32"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview33"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview34"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview35"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview36"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+        <TextView android:text= ""
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:id="@+id/textview37"
+            android:textStyle="bold"
+            android:padding="5dip"></TextView>
+    </TableRow>
+
+
+
+    <TableRow android:id="@+id/tableRow13"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#f7f7f7"
+        >
+        <TextView android:text= "Total:"
+            android:id="@+id/textview10"
+            android:padding="5dip"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:layout_span="2"
+            ></TextView>
+        <TextView android:text= ""
+            android:id="@+id/textview98"
+            android:padding="5dip"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:layout_span="6"
+            ></TextView>
+
+
+    </TableRow>
+
+    <TableRow android:id="@+id/tableRow14"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#f7f7f7"
+        >
+
+        <TextView android:text= "Percentage:"
+            android:id="@+id/textview11"
+            android:padding="5dip"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:layout_span="2"
+            ></TextView>
+
+        <TextView android:text= ""
+            android:id="@+id/textview99"
+            android:padding="5dip"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:layout_span="3"
+            ></TextView>
+    </TableRow>
+
+
+</TableLayout>
+    </HorizontalScrollView>
+</ScrollView><!-- From: file:/C:/Users/venky/Desktop/original/Satisfied/Resultstry/app/src/main/res/layout/activity_main.xml -->

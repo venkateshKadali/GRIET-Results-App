@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:text="@string/result1"
+        android:layout_gravity="center"
+        android:id="@+id/button"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#4285f4"
+        android:textColor="#fffdfffb"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        android:typeface="monospace"
+        android:onClick="user_reg1">
+    </Button>
+
+    <Button android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:text="@string/result2"
+        android:onClick="user_reg2"
+        android:layout_gravity="center"
+        android:id="@+id/button1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#4285f4"
+        android:textColor="#fffdfffb"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        android:typeface="monospace">
+    </Button>
+
+    <Button android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:text="@string/result3"
+        android:onClick="user_reg3"
+        android:layout_gravity="center"
+        android:id="@+id/button2"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#4285f4"
+        android:textColor="#fffdfffb"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        android:typeface="monospace">
+    </Button>
+
+    <Button android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:text="@string/result4"
+        android:onClick="user_reg4"
+        android:layout_gravity="center"
+        android:id="@+id/button3"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#4285f4"
+        android:textColor="#fffdfffb"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        android:typeface="monospace">
+    </Button>
+
+</LinearLayout>
